@@ -3,7 +3,10 @@
     "name": "startbootstrap-agency",
     "version": "5.2.2",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "deploy": "netlify deploy --prod --dir=.",
+        "setup-deploy": "app-app --deploy && yarn deploy",
+        "postdeploy": "echo 'Your site was deployed to https://portfolio-adam.netlify.com'"
     },
     "description": "Agency is a one page HTML theme for Bootstrap.",
     "keywords": [
@@ -14,7 +17,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
+    "homepage": "https://portfolio-adam.netlify.com",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
         "email": "feedback@startbootstrap.com"
