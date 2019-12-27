@@ -220,7 +220,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-}
+ }
 
 .service-heading {
   margin: 15px 0;
@@ -519,6 +519,20 @@ header.masthead .intro-text .intro-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .links {
+    /* position: absolute; */
+    /* display: flex;
+    justify-content: center; */
+    margin-right: 300px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -708,21 +722,35 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin-left: 170px;
   }
 
+  .fas {
+    font-size: 12pt;
+    margin-bottom: 20px;
+  }
+
   @media (min-width: 300px) {
     #greeting {
       font-size: 24pt;
     }
 
-    .col-md-4 ul {
-      margin-left: 2rem;
-    }
-
-    .linkedin {
-      margin-right: 40px;
-    }
-
-    .copyright{
-      margin-left: 2rem;
-      
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      margin-left: 10rem;
+      margin-right: 10rem;
     }
   }
+
+  @media (min-width: 768px) {
+    .links {
+      margin-left: 12rem;
+    } 
+  }
+
+  @media (min-width: 992px){
+    .links {
+      /* display: flex;
+      justify-content: center; */
+      margin-left: 18.5rem;
+      /* margin-right: 15rem; */
+  }
+}
