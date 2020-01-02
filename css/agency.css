@@ -114,7 +114,7 @@ img::-moz-selection {
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
-  padding: 13px;
+  padding-top: 13px;
   text-transform: uppercase;
   color: white;
   border: 0;
@@ -741,16 +741,30 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 
   @media (min-width: 768px) {
-    .links {
+    #links {
+      /* display: flex; */
+      justify-content: space-evenly;
+      /* margin-left: 15rem; */
+      margin-right: 10rem;
+      /* padding: 0; */
+    }
+
+    .links{
       margin-left: 12rem;
-    } 
+    }
+  }
+
+  @media (min-width: 850px){
+    /* .links{
+      margin-right: 2rem;
+    } */
   }
 
   @media (min-width: 992px){
     .links {
       /* display: flex;
       justify-content: center; */
-      margin-left: 18.5rem;
+      margin-left: 24rem;
       /* margin-right: 15rem; */
   }
 }
