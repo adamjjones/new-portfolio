@@ -43,7 +43,8 @@ div#contact {
   height: 200px;
 }
 
-.portfolio-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: #aaaaaa;
   width: 300px;
 }
 
@@ -89,8 +90,63 @@ div h2 {
   line-height: 1;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.3;
+  }
+  25% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.6;
+  }
+  50% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.8;
+  }
+  100% {
+    position: relative;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.3;
+  }
+  25% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.6;
+  }
+  50% {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.8;
+  }
+  100% {
+    position: relative;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
 a:hover {
-  color: #fec503;
+  touch-action: pan-right;
+}
+
+a:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @media (min-width: 300px) {
@@ -375,11 +431,11 @@ header.masthead .intro-text .intro-heading {
   height: 100%;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(134, 142, 150, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
+  opacity: 0;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {

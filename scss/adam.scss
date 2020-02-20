@@ -34,9 +34,10 @@ div#contact {
 .img-fluid{
   width: 400px;
   height: 200px;
-  }
-  
-  .portfolio-hover {
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+    background: #aaaaaa;
     width: 300px;  
   }
 
@@ -84,10 +85,24 @@ div#contact {
     color: black;
     line-height: 1;
   }
+
+  @keyframes pulse {
+    0%   {position: relative; bottom:20px; opacity:0.3;}
+    25%  {position: relative; bottom:20px; opacity:0.6;}
+    50%  {position: relative; bottom:20px; opacity: 0.8;}
+    100% {position: relative; bottom:0px; opacity: 1;}
+  }
+
+  a:hover {
+    touch-action: pan-right;
+  }
   
   a:hover {
-    color: #fec503;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
   }
+  
 
   @media (min-width: 300px) {
     #greeting {
