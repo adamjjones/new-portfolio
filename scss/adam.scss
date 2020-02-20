@@ -1,0 +1,131 @@
+body {
+  color: black;
+}
+
+.contact-info {
+  color: #fec503;
+}
+.masthead {
+  color: white !important;
+  width: 100%;
+  padding-top: 13px;
+  background-image: url('../img/091319_Adam_w-15.jpg') !important;
+  background: rgba(201, 196, 196, 0.7);
+}
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .links {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 300px; */
+    width: 100%;
+  }
+
+div#contact {
+  width: 100%;
+}
+
+.img-fluid{
+  width: 400px;
+  height: 200px;
+  }
+  
+  .portfolio-hover {
+    width: 300px;  
+  }
+
+  #greeting {
+    margin-bottom: 100px;
+    font-size: 36pt;
+  }
+
+  .col-md-4 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 170px;
+  }
+
+  .fas {
+    font-size: 12pt;
+    // margin-bottom: 20px;
+  }
+
+  .fab {
+    font-size: 4rem;
+    color: black;
+    // padding-top: 50px;
+  }
+
+  div h2 {
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-bottom: 20px;
+  }
+
+  .scale-codewars{
+    width: 60%;
+    height: 60%;
+  }
+
+  .social-description {
+    font-size: 14pt;
+    color: black;
+    line-height: 1;
+  }
+  
+  a:hover {
+    color: #fec503;
+  }
+
+  @media (min-width: 300px) {
+    #greeting {
+      font-size: 24pt;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .links{
+      margin-left: 12rem;
+    }
+  }
+  
+    #Links {
+      width:100%;
+    }
+
+    #links {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-left: 15rem;
+      /* margin-right: 10rem; */
+      /* padding: 0; */
+    }
+
+
+  @media (min-width: 850px){
+    /* .links{
+      margin-right: 2rem;
+    } */
+  }
+
+  @media (min-width: 992px){
+    .links {
+      /* display: flex;
+      justify-content: center; */
+      margin-left: 24rem;
+      /* margin-right: 15rem; */
+  }
+}

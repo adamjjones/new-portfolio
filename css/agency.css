@@ -1,10 +1,139 @@
 /*!
  * Start Bootstrap - Agency v5.2.2 (https://portfolio-adam.netlify.com)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
- body {
+body {
+  color: black;
+}
+
+.contact-info {
+  color: #fec503;
+}
+
+.masthead {
+  color: white !important;
+  width: 100%;
+  padding-top: 13px;
+  background-image: url("../img/091319_Adam_w-15.jpg") !important;
+  background: rgba(201, 196, 196, 0.7);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.links {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-left: 300px; */
+  width: 100%;
+}
+
+div#contact {
+  width: 100%;
+}
+
+.img-fluid {
+  width: 400px;
+  height: 200px;
+}
+
+.portfolio-hover {
+  width: 300px;
+}
+
+#greeting {
+  margin-bottom: 100px;
+  font-size: 36pt;
+}
+
+.col-md-4 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 170px;
+}
+
+.fas {
+  font-size: 12pt;
+}
+
+.fab {
+  font-size: 4rem;
+  color: black;
+}
+
+div h2 {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scale-codewars {
+  width: 60%;
+  height: 60%;
+}
+
+.social-description {
+  font-size: 14pt;
+  color: black;
+  line-height: 1;
+}
+
+a:hover {
+  color: #fec503;
+}
+
+@media (min-width: 300px) {
+  #greeting {
+    font-size: 24pt;
+  }
+}
+
+@media (min-width: 768px) {
+  .links {
+    margin-left: 12rem;
+  }
+}
+
+#Links {
+  width: 100%;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 15rem;
+  /* margin-right: 10rem; */
+  /* padding: 0; */
+}
+
+@media (min-width: 850px) {
+  /* .links{
+      margin-right: 2rem;
+    } */
+}
+
+@media (min-width: 992px) {
+  .links {
+    /* display: flex;
+      justify-content: center; */
+    margin-left: 24rem;
+    /* margin-right: 15rem; */
+  }
+}
+
+body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
@@ -14,19 +143,15 @@ p {
 }
 
 a {
-  color: black;
-}
-
-.contact-info {
-  color: #fec503;
+  color: #fed136;
 }
 
 a:hover {
   color: #fec503;
 }
 
-.primary {
-  color: #fec503 !important;
+.text-primary {
+  color: #fed136 !important;
 }
 
 h1,
@@ -41,7 +166,6 @@ h6 {
 
 .page-section {
   padding: 100px 0;
-  width: 100%;
 }
 
 .page-section h2.section-heading {
@@ -119,7 +243,7 @@ img::-moz-selection {
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
-  padding-top: 13px;
+  padding: 13px;
   text-transform: uppercase;
   color: white;
   border: 0;
@@ -178,7 +302,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/091319_Adam_w-15.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -225,7 +349,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
- }
+}
 
 .service-heading {
   margin: 15px 0;
@@ -251,7 +375,7 @@ header.masthead .intro-text .intro-heading {
   height: 100%;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(201, 196, 196, 0.7);
+  background: rgba(254, 209, 54, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -524,20 +648,6 @@ header.masthead .intro-text .intro-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .links {
-    /* position: absolute; */
-    display: flex;
-    justify-content: space-evenly;
-    /* margin-left: 300px; */
-  }
-
 }
 
 @media (min-width: 992px) {
@@ -604,15 +714,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  width: 100%;
   background-color: #212529;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-div#contact {
-  width: 100%;
 }
 
 section#contact .section-heading {
@@ -704,94 +809,4 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
-}
-
-.img-fluid{
-  width: 400px;
-  height: 200px;
-  }
-  
-  .portfolio-hover {
-    width: 300px;  
-  }
-
-  #greeting {
-    margin-bottom: 100px;
-    font-size: 36pt;
-  }
-
-  .col-md-4 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 170px;
-  }
-
-  .fas {
-    font-size: 12pt;
-    margin-bottom: 20px;
-  }
-
-  .fab {
-    font-size: 5rem;
-  }
-
-  div h2 {
-    text-align: center;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .scale-codewars{
-    width: 60%;
-    height: 60%;
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: 300px) {
-    #greeting {
-      font-size: 24pt;
-    }
-
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      margin-left: 10rem;
-      margin-right: 10rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .links{
-      margin-left: 12rem;
-    }
-  }
-  
-    #links {
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      margin-left: 15rem;
-      /* margin-right: 10rem; */
-      /* padding: 0; */
-    }
-
-
-  @media (min-width: 850px){
-    /* .links{
-      margin-right: 2rem;
-    } */
-  }
-
-  @media (min-width: 992px){
-    .links {
-      /* display: flex;
-      justify-content: center; */
-      margin-left: 24rem;
-      /* margin-right: 15rem; */
-  }
 }
