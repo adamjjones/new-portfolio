@@ -14,15 +14,19 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: black;
+}
+
+.contact-info {
+  color: #fec503;
 }
 
 a:hover {
   color: #fec503;
 }
 
-.text-primary {
-  color: #fed136 !important;
+.primary {
+  color: #fec503 !important;
 }
 
 h1,
@@ -37,6 +41,7 @@ h6 {
 
 .page-section {
   padding: 100px 0;
+  width: 100%;
 }
 
 .page-section h2.section-heading {
@@ -528,9 +533,9 @@ header.masthead .intro-text .intro-heading {
 
   .links {
     /* position: absolute; */
-    /* display: flex;
-    justify-content: center; */
-    margin-right: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 300px; */
   }
 
 }
@@ -727,6 +732,26 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin-bottom: 20px;
   }
 
+  .fab {
+    font-size: 5rem;
+  }
+
+  div h2 {
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .scale-codewars{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+
   @media (min-width: 300px) {
     #greeting {
       font-size: 24pt;
@@ -741,18 +766,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 
   @media (min-width: 768px) {
-    #links {
-      /* display: flex; */
-      justify-content: space-evenly;
-      /* margin-left: 15rem; */
-      margin-right: 10rem;
-      /* padding: 0; */
-    }
-
     .links{
       margin-left: 12rem;
     }
   }
+  
+    #links {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-left: 15rem;
+      /* margin-right: 10rem; */
+      /* padding: 0; */
+    }
+
 
   @media (min-width: 850px){
     /* .links{
