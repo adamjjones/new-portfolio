@@ -4,7 +4,8 @@
   "version": "5.2.2",
   "scripts": {
     "start": "gulp watch",
-    "deploy": "netlify deploy --prod --dir=.",
+    "deploy": "./node_modules/gulp/node_modules/.bin/gulp build && rsync -v -v -e 'ssh -p 18222' -r index.html js css img vendor scss adam@adamjones.tech:/home/adam/sites/adamjones.tech",
+    "netlify-deploy": "netlify deploy --prod --dir=.",
     "setup-deploy": "app-app --deploy && yarn deploy",
     "postdeploy": "echo 'Your site was deployed to https://portfolio-adam.netlify.com'"
   },
@@ -42,7 +43,7 @@
   "devDependencies": {
     "browser-sync": "2.26.7",
     "del": "5.1.0",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "7.0.0",
     "gulp-clean-css": "4.2.0",
     "gulp-header": "2.0.9",
