@@ -145,8 +145,21 @@ a:hover {
   animation-name: pulse;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.cert {
+  width: 90%;
+  height: 90%;
+}
+
+.bottom-pad {
+  margin-bottom: 30px;
+}
+
+#certs {
+  padding: 50px 0px;
 }
 
 @media (min-width: 300px) {
@@ -162,6 +175,10 @@ a:hover {
 }
 
 #Links {
+  width: 100%;
+}
+
+#Certs {
   width: 100%;
 }
 
