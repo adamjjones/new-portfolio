@@ -69,6 +69,15 @@ div#contact {
   color: black;
 }
 
+.fab:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
 div h2 {
   text-align: center;
 }
@@ -140,7 +149,16 @@ a:hover {
   touch-action: pan-right;
 }
 
-a:hover {
+.portfolio-link:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.cert:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1.5s;

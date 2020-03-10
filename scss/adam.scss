@@ -28,6 +28,7 @@ body {
     width: 100%;
   }
 
+
 div#contact {
   width: 100%;
 }
@@ -63,6 +64,12 @@ div#contact {
     font-size: 4rem;
     color: black;
     // padding-top: 50px;
+  }
+
+  .fab:hover {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
   }
 
   div h2 {
@@ -114,10 +121,16 @@ div#contact {
     touch-action: pan-right;
   }
   
-  a:hover {
+  .portfolio-link:hover {
     animation-name: pulse;
     animation-duration: 1.5s;
     animation-iteration-count: 2;
+  }
+
+  .cert:hover {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2; 
   }
 
   .cert {
