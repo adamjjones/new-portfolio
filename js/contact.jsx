@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 
 class contact extends Component {
   constructor(props) {
@@ -47,3 +47,5 @@ ReactDOM.render(e(submitForm), domContainer);
 const domContainer = document.querySelector('#contact');
 
 export default contact
+
+*/

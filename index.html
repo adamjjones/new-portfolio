@@ -29,6 +29,19 @@
 </head>
 
 <body id="page-top">
+  <script>
+    function myFunction() {
+      // var element = document.body;
+      // element.classList.toggle("dark");
+      // portfolio.classList.toggle("portfolio");
+      const body = $("body");
+      const allChildren = $("body").find('*');
+      body.toggleClass("dark");
+      allChildren.toggleClass("dark");
+
+    }
+
+  </script>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -39,6 +52,7 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
+      <button onclick="myFunction()">Toggle dark mode</button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
@@ -83,8 +97,8 @@
             located in St.Petersburg, FL. Topics include: HTML5, CSS3, flexbox, JavaScript, React/Hooks, C#, .NET, and
             Entity Framework.</h3>
         </div>
-        <!-- </div>
-      <!-- <div class="row">
+        <!--</div>
+       <div class="row">
         <div class="col-lg-12">
           <ul class="timeline">
             <li>
@@ -182,10 +196,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="./img/portfolio/SunshineBrass.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>Sunshine Brass</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>Sunshine Brass</h4>
-                </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
@@ -194,10 +208,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="img/portfolio/color.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>HSL Color Picker</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>HSL Color Picker</h4>
-                </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
@@ -206,10 +220,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="img/portfolio/bands.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>Bands</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>Bands</h4>
-                </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
@@ -218,10 +232,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="img/portfolio/astro.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>Astro Lounge</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>Astro Lounge</h4>
-                </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
@@ -230,10 +244,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="img/portfolio/crypto.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>Cryptocurrency</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>Cryptocurrency</h4>
-                </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
@@ -242,10 +256,10 @@
                     </div>
                   </div>
                   <img class="img-fluid" src="img/portfolio/weather.png" alt="">
+                  <div class="portfolio-caption">
+                    <h4>Weather</h4>
+                  </div>
                 </a>
-                <div class="portfolio-caption">
-                  <h4>Weather</h4>
-                </div>
               </div>
             </div>
           </div>
@@ -354,7 +368,7 @@
             <div class="row text-center">
               <div class="col-md-6 col-sm-6 col-xs-12 bottom-pad">
                 <span class="fa-stack fa-4x">
-                  <a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000396059/6hbg7swvk5">
+                  <a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000396059/6hbg7swvk5" target="_blank">
                     <img class="fab cert" src="img/LPIC-1-Small.png" />
                     <p class="social-description">LPIC-1 (Linux+)</p>
                   </a>
@@ -362,30 +376,12 @@
               </div>
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <span class="fa-stack fa-4x">
-                  <a href="https://www.testdome.com/cert/e6e75c354d5547cc892bc278f2dc1367">
+                  <a href="https://www.testdome.com/cert/e6e75c354d5547cc892bc278f2dc1367" target="_blank">
                     <img class="fab cert" src="./img/sql.png" />
                     <p class="social-description">SQL Certification</p>
                   </a>
                 </span>
               </div>
-
-              <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-                <span class="fa-stack fa-4x">
-                  <a href="https://www.linkedin.com/in/adamjones1992/">
-                    <i class="fab fa-linkedin-in"></i>
-                    <p class="social-description">LinkedIn</p>
-                  </a>
-                </span>
-              </div>
-
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <span class="fa-stack fa-4x">
-                  <a href="https://www.codewars.com/users/adamjjones">
-                    <img class="fab scale-codewars" src="./img/codewars-logo-1.png" />
-                    <p class="social-description">Codewars</p>
-                  </a>
-                </span>
-              </div> -->
             </div>
           </div>
         </section>
@@ -403,7 +399,7 @@
             <div class="row text-center">
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <span class="fa-stack fa-4x">
-                  <a href="https://github.com/adamjjones">
+                  <a href="https://github.com/adamjjones" target="_blank">
                     <i class="fab fa-github"></i>
                     <p class="social-description">GitHub</p>
                   </a>
@@ -411,7 +407,7 @@
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <span class="fa-stack fa-4x">
-                  <a href="https://www.facebook.com/adam.jones.9026">
+                  <a href="https://www.facebook.com/adam.jones.9026" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     <p class="social-description">Facebook</p>
                   </a>
@@ -420,7 +416,7 @@
 
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <span class="fa-stack fa-4x">
-                  <a href="https://www.linkedin.com/in/adamjones1992/">
+                  <a href="https://www.linkedin.com/in/adamjones1992/" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                     <p class="social-description">LinkedIn</p>
                   </a>
@@ -429,7 +425,7 @@
 
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <span class="fa-stack fa-4x">
-                  <a href="https://www.codewars.com/users/adamjjones">
+                  <a href="https://www.codewars.com/users/adamjjones" target="_blank">
                     <img class="fab scale-codewars" src="./img/codewars-logo-1.png" />
                     <p class="social-description">Codewars</p>
                   </a>
@@ -560,7 +556,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Sunshine Brass</h2>
-                <a href="https://github.com/adamjjones/modern-sunshinebrass" class="no-animate">
+                <a href="https://github.com/adamjjones/modern-sunshinebrass" class="no-animate" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
@@ -598,7 +594,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">HSL Color Picker</h2>
-                <a href="https://github.com/adamjjones/colorpicker">
+                <a href="https://github.com/adamjjones/colorpicker" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <a href="https://colorpicker-adam.netlify.com/" target="_blank">
@@ -635,7 +631,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Favorite Bands</h2>
-                <a href="https://github.com/adamjjones/bands">
+                <a href="https://github.com/adamjjones/bands" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <a href="https://bands-adam.netlify.com/HomePage" target="_blank">
@@ -672,7 +668,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Astro Lounge</h2>
-                <a href="https://github.com/adamjjones/astro-lounge">
+                <a href="https://github.com/adamjjones/astro-lounge" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <h4>Warning: This project may take a couple minutes for data to load.</h4>
@@ -710,7 +706,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Cryptocurrency</h2>
-                <a href="https://github.com/adamjjones/crypto">
+                <a href="https://github.com/adamjjones/crypto" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <a href="https://crypto-adam.netlify.com/" target="_blank">
@@ -746,7 +742,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Weather</h2>
-                <a href="https://github.com/adamjjones/weather">
+                <a href="https://github.com/adamjjones/weather" target="_blank">
                   <h5>Github Link</h5>
                 </a>
                 <a href="https://weather-adam.netlify.com/" target="_blank">
