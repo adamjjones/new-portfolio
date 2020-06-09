@@ -31,6 +31,10 @@ h2.section-heading.text-uppercase.dark {
   color: white;
 }
 
+.modal-body.text-uppercase {
+  word-wrap: break-word;
+}
+
 .portfolio-caption.dark {
   color: black;
   background-color: black;
