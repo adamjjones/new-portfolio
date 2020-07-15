@@ -44,6 +44,12 @@ h3.text-muted.dark {
   color: #ffffff !important;
 }
 
+div.portfolio-caption {
+  display: flex;
+  justify-content: center;
+  word-break: keep-all;
+}
+
 /* jbody {
   color: black;
   animation-name: dark;
@@ -55,8 +61,8 @@ h3.text-muted.dark {
 }
 
 .masthead {
+  width: 105% !important;
   color: white !important;
-  width: 100%;
   padding-top: 13px;
   background-image: url("../img/091319_Adam_w-15.jpg") !important;
   background: rgba(201, 196, 196, 0.7);
