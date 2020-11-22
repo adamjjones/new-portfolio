@@ -35,6 +35,10 @@ h2.section-heading.text-uppercase.dark {
   word-wrap: break-word;
 }
 
+.portfolio-caption h5 {
+  color: #000000;
+}
+
 .portfolio-caption.dark {
   color: black;
   background-color: black;
