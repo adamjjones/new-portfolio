@@ -65,7 +65,7 @@ div.portfolio-caption {
 }
 
 .masthead {
-  width: 105% !important;
+  width: 100% !important;
   color: white !important;
   padding-top: 13px;
   background-image: url("../img/091319_Adam_w-15.jpg") !important;
@@ -189,22 +189,18 @@ p.social-description.dark {
 @-webkit-keyframes pulse {
   0% {
     position: relative;
-    /* bottom: 20px; */
-    opacity: 0.3;
+    opacity: 0.2;
   }
   25% {
     position: relative;
-    /* bottom: 20px; */
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
     position: relative;
-    /* bottom: 20px; */
     opacity: 0.8;
   }
   100% {
     position: relative;
-    /* bottom: 0px; */
     opacity: 1;
   }
 }
@@ -212,22 +208,18 @@ p.social-description.dark {
 @keyframes pulse {
   0% {
     position: relative;
-    /* bottom: 20px; */
-    opacity: 0.3;
+    opacity: 0.2;
   }
   25% {
     position: relative;
-    /* bottom: 20px; */
-    opacity: 0.6;
+    opacity: 0.5;
   }
   50% {
     position: relative;
-    /* bottom: 20px; */
     opacity: 0.8;
   }
   100% {
     position: relative;
-    /* bottom: 0px; */
     opacity: 1;
   }
 }
@@ -237,23 +229,25 @@ a:hover {
 }
 
 .portfolio-link:hover {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-iteration-count: 2;
-    animation-iteration-count: 2;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
 
 .cert:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
 
 .cert {

@@ -60,7 +60,7 @@ div.portfolio-caption {
 }
 
 .masthead {
-  width: 105% !important;
+  width: 100% !important;
   color: white !important;
   padding-top: 13px;
   background-image: url('../img/091319_Adam_w-15.jpg') !important;
@@ -188,10 +188,10 @@ img.img-fluid > div.portfolio-caption.dark {
   }
 
   @keyframes pulse {
-    0%   {position: relative; bottom:20px; opacity:0.3;}
-    25%  {position: relative; bottom:20px; opacity:0.6;}
-    50%  {position: relative; bottom:20px; opacity: 0.8;}
-    100% {position: relative; bottom:0px; opacity: 1;}
+    0%   {position: relative; opacity:0.2;}
+    25%  {position: relative; opacity:0.5;}
+    50%  {position: relative; opacity:0.8;}
+    100% {position: relative; opacity: 1;}
   }
 
   a:hover {
@@ -199,15 +199,26 @@ img.img-fluid > div.portfolio-caption.dark {
   }
   
   .portfolio-link:hover {
+    -webkit-animation-name: pulse;
     animation-name: pulse;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 2;
     animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 
   .cert:hover {
+    -webkit-animation-name: pulse;
     animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: 2; 
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+
   }
 
   .cert {
